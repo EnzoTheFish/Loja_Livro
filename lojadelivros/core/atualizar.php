@@ -14,8 +14,9 @@
         $autor = $_POST['autor'];
         $preco = $_POST['preco'];
         $paginas = $_POST['paginas'];
+        $estoque = $_POST['estoque'];
 
-        $update = "UPDATE livros SET nome='$name', autor='$autor', preco='$preco', paginas = '$paginas' WHERE Id=$id_post";
+        $update = "UPDATE livros SET nome='$name', autor='$autor', preco='$preco', paginas = '$paginas', estoque = '$estoque' WHERE Id=$id_post";
 
         if ($conexao->query($update)) {
         echo "<p>Livro atualizado com sucesso!</p>";
@@ -34,6 +35,7 @@
     Autor(a): <br> <input type="text" name = "autor"><br>
     Preço: <br> <input type="number" name = "preco" step="0.01"><br>
     Número de paginas: <br> <input type="number" name = "paginas"><br>
+    Estoque: <br> <input type="number" name = "estoque"> <br>
     <button type="submit">Atualizar</button>
 </form>
 <a href="./listar.php" type="button" class="btn btn-success my-2">Voltar para a Lista</a>
