@@ -46,5 +46,8 @@
 
 ?>
 
+    <p>
+        <a href="../index.php" type="button">Voltar Pagina Inicial</a>
+    </p>
    
 
