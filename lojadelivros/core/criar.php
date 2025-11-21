@@ -4,6 +4,7 @@
     Autor(a): <br> <input type="text" name = "autor"><br>
     Preço: <br> <input type="number" name = "preco" step="0.01"><br>
     Número de paginas: <br> <input type="number" name = "paginas"><br>
+    Estoque: <br> <input type="number" name = "estoque" required min="0"><br>
     <button type="submit">Cadastrar</button>
 </form>
     
@@ -18,9 +19,10 @@
         $autor = $_POST['autor'];
         $preco = $_POST['preco'];
         $paginas = $_POST['paginas'];
+        $estoque = $_POST['estoque'];
 
-        $sql = "INSERT INTO livros(nome, autor, preco, paginas) VALUES
-        ('$nome', '$autor',' $preco',' $paginas')";
+        $sql = "INSERT INTO livros(nome, autor, preco, paginas, estoque) VALUES
+        ('$nome', '$autor',' $preco',' $paginas', '$estoque')";
 
         if ($conexao->query($sql)) {
             echo "<p>Livro cadastrado com sucesso!</p>";

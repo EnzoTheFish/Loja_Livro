@@ -17,7 +17,8 @@
         nome VARCHAR(50) NOT NULL,
         autor VARCHAR(100) NOT NULL,
         preco DECIMAL(10,2) NOT NULL,
-        paginas INT NOT NULL
+        paginas INT NOT NULL,
+        estoque INT NOT NULL DEFAULT 0
     )";
     $conexao->query($sql);
 ?>

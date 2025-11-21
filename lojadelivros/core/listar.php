@@ -28,6 +28,7 @@
                     <th>Autor(a)</th>
                     <th>Preço</th>
                     <th>Número de paginas</th>
+                    <th>Estoque</th>
                 </tr>
             </thead>
             <tbody>"; 
@@ -37,6 +38,7 @@
                 echo "<td>".$linha['autor']."</td>";
                 echo "<td>".$linha['preco']."</td>";
                 echo "<td>".$linha['paginas']."</td>";
+                echo "<td>".$linha['estoque']."</td>";
                 echo "<td><a type='button' class='btn btn-warning' href='./atualizar.php?Id=".$linha['Id']."'>Editar</a> | <a type='button' class='btn btn-danger' href='./excluir.php?Id=".$linha['Id']."'>Excluir</a> </td>";
                 echo "</tr>";
             }
