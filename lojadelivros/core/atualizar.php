@@ -1,6 +1,7 @@
 
 <?php
     include '../infra/db.php';
+    
     $id = $_GET['Id'] ?? null;
 
     if($_SERVER['REQUEST_METHOD'] == "POST"){
@@ -51,8 +52,8 @@
     Preço: <br> <input type="number" name = "preco" step="0.01" value="<?php echo $livro['preco']; ?>"><br>
     Número de paginas: <br> <input type="number" name = "paginas" value="<?php echo $livro['paginas']; ?>"><br>
     Estoque: <br> <input type="number" name = "estoque" value="<?php echo $livro['estoque']; ?>"> <br>
-    <button type="submit">Atualizar</button>
+    <p><button type="submit">Atualizar</button></p>
 </form>
-<a href="./listar.php" type="button" class="btn btn-success my-2">Voltar para a Lista</a>
+<br><a href="./listar.php" type="button" class="btn-voltar">Voltar para a Lista</a>
 
 

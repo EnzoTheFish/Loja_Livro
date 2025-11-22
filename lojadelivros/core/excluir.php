@@ -1,5 +1,6 @@
 <?php
     include '../infra/db.php';
+    include '../componentes/header.php';
     $id = $_GET['Id'] ?? null;
 
 

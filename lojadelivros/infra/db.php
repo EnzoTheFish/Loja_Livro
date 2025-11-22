@@ -14,7 +14,7 @@
 
     $sql = "CREATE TABLE IF NOT EXISTS livros(
         Id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-        nome VARCHAR(50) NOT NULL,
+        nome VARCHAR(100) NOT NULL,
         autor VARCHAR(100) NOT NULL,
         preco DECIMAL(10,2) NOT NULL,
         paginas INT NOT NULL,

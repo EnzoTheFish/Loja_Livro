@@ -15,9 +15,7 @@
 ?>
 
 <h1>Livros Cadastrados</h1>
-<p>
-    <a href='./criar.php' type="button">Cadastrar novo livro</a>
-</p>
+
 <?php
     include '../componentes/header.php';
     if($tem_livros){
@@ -29,6 +27,7 @@
                     <th>Preço</th>
                     <th>Número de paginas</th>
                     <th>Estoque</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>"; 
@@ -39,7 +38,7 @@
                 echo "<td>".$linha['preco']."</td>";
                 echo "<td>".$linha['paginas']."</td>";
                 echo "<td>".$linha['estoque']."</td>";
-                echo "<td><a type='button' class='btn btn-warning' href='./atualizar.php?Id=".$linha['Id']."'>Editar</a> | <a type='button' class='btn btn-danger' href='./excluir.php?Id=".$linha['Id']."'>Excluir</a> </td>";
+                echo "<td><a type='button' class='btn-editar' href='./atualizar.php?Id=".$linha['Id']."'>Editar</a> | <a type='button' class='btn-excluir' href='./excluir.php?Id=".$linha['Id']."'>Excluir</a> </td>";
                 echo "</tr>";
             }
             echo "</tbody>
@@ -47,9 +46,11 @@
     }
 
 ?>
-
-    <p>
-        <a href="../index.php" type="button">Voltar Pagina Inicial</a>
-    </p>
+<p>
+<a href='./criar.php' type="button" class="btn-cadastrar">Cadastrar novo livro</a>
+</p>
+<p>
+    <a href="../index.php" type="button" class="btn-voltar">Voltar para a pagina inicial</a>
+</p>
    
 
