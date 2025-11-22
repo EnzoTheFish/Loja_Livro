@@ -44,6 +44,8 @@
 
     $conexao->close();
 ?>
+<link rel="stylesheet" href="../css/criar.css">
+<div class="container-form">
 <h2>Atualizar Livro</h2>
 <form action="atualizar.php" method="post">
     <input type="hidden" name="Id" value="<?php echo $id; ?>">
@@ -55,5 +57,6 @@
     <p><button type="submit">Atualizar</button></p>
 </form>
 <br><a href="./listar.php" type="button" class="btn-voltar">Voltar para a Lista</a>
+</div>
 
 

@@ -1,7 +1,6 @@
 <?php
 include '../infra/db.php';
 
-// Buscar livros do banco
 $sql = "SELECT * FROM livros";
 $result = $conexao->query($sql);
 $livros = [];

@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../css/criar.css">
+<div class="container-form">
 <h2>Cadastrar Livros</h2>
 <form action="criar.php" method="post">
     Nome do livro: <br> <input type="text" name = "nome"><br>
@@ -8,6 +10,7 @@
     <button type="submit">Cadastrar</button>
 </form>
 <br><a href="./listar.php" class="btn-voltar">Voltar para a lista.</a>
+</div>
 
 <?php
     include '../infra/db.php';
